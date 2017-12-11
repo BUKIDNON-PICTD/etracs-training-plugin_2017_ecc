@@ -1,0 +1,13 @@
+<workunit>
+    <invokers>
+      <!--  <invoker folderid="/explorer/training/personnel" action="create" caption="Personnel" target="popup" > </invoker>
+        <invoker folderid="/home/training/personnel" action="create" caption="Personnel" target="popup" > </invoker> -->
+        <invoker folderid="home/paymentorder" action="create" caption="Offline Payment Order" role="SPOOFFLINE" > </invoker>
+        <invoker type="payorder:open" action="open" caption="Offline Payment Order" role="SPOOFFLINE" visibleWhen="#{entity.ordertype=='SG'}"> </invoker>
+                
+    </invokers>
+    <code class="etracs.training.plugin.PayOrderOfflineController"/>
+    <pages>
+        <page name="default" template="etracs.training.plugin.PayOrderOfflinePage" />
+    </pages>
+</workunit>

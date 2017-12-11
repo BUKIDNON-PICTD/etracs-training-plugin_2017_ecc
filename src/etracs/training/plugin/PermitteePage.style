@@ -1,0 +1,20 @@
+"entity.*|selectedCommodity"[mode == 'read']{
+    enabled:false;
+}
+
+"entity.*|selectedPermit"[mode == 'read']{
+    readonly:true;
+}
+
+"entity.*|selectedCommodity"[mode != 'read']{
+    enabled:true;
+}
+"entity.*|selectedPermit"[mode != 'read']{
+    readonly:false;
+}
+
+
+"entity.objid"[mode == 'edit']{
+    enabled:false;
+}
+
