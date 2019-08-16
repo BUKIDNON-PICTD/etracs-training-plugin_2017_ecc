@@ -1,4 +1,4 @@
-<workunit>
+<workunit extends="wtemplates/gov/treasury/ReportController.xml" >
     <invokers>
         <invoker folderid="/home/paymentorder" caption="Permittee Report" 
                  action="init" target="window" role="SPOPERMITTEELIST" index="3"/>

@@ -1,0 +1,6 @@
+<workunit extends="wtemplates/SimpleReportController.xml" >
+    <invokers>
+        <invoker type="test:permittee" caption="View Bought Quantity" action="preview" index="1" />        
+    </invokers>
+    <code class="etracs.training.plugin.ReportPermitteeCumulativeQuantity" />
+</workunit>

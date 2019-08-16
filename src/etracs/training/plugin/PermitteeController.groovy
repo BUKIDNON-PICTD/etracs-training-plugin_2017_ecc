@@ -173,4 +173,10 @@ public class PermitteeController extends CRUDController
         ])
     }
     
+    def print() {
+        def op = Inv.lookupOpener( "test:permittee", [entity: entity] );
+        op.target = 'self';
+        return op;
+    }
+    
 }

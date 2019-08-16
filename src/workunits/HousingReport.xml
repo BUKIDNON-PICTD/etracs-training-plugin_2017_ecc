@@ -1,4 +1,4 @@
-<workunit>
+<workunit extends="wtemplates/gov/treasury/ReportController.xml" >
     <invokers>
         <invoker folderid="/home/paymentorder" caption="Housing Collection Report" 
                  action="init" target="window" role="SPOHOUSINGREPORT" index="3"/>
@@ -67,6 +67,21 @@
         Map getParameters() {
             return data.info
         }
+        
+        def lookupParams = [
+            onempty: {
+                entity.account = null; 
+            },          
+            onselect: {o-> 
+                entity.account = [ 
+                    objid : o.objid, 
+                    code  : o.code, 
+                    title : o.title 
+                ] 
+            } 
+        ];
+        
+        def lookupAccounts = Inv.lookupOpener('revenueitem:lookup', lookupParams); 
          
     }
 ]]>        

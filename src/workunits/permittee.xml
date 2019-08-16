@@ -7,6 +7,8 @@
         <invoker type="permittee:create" action="create" caption="Permittee" role="SPOPERMITTEE"> </invoker>
         <invoker type="permittee:open" action="open" caption="Permittee" role="SPOPERMITTEE"> </invoker>
         <invoker type="permittee:cancel" action="cancel" caption="Permittee (New)" role="SPOPERMITTEE"> </invoker>
+        <invoker type="formActions" caption="Print Quantities Bought"  
+            action="print"/>
        <!--  <invoker type="permittee:edit" action="edit" caption="Permittee (New)" role="SPOPERMITTEE"> </invoker>  -->
        
                   

@@ -1,0 +1,24 @@
+<workunit >
+    <invokers>
+      <!--  <invoker folderid="/explorer/training/personnel" action="create" caption="Personnel" target="popup" > </invoker>
+        <invoker folderid="/home/training/personnel" action="create" caption="Personnel" target="popup" > </invoker> 
+        <invoker type="formActions" action="cancel" caption="Cancel" mnemonic = "C" shortcut = "ctrl C" 
+                 visibleWhen = "#{mode == 'init'}"> </invoker>-->
+        <invoker folderid="home/paymentorder" action="init" 
+                 caption="Transfer Tax Assessment" role="TRANSFERTAX"> </invoker>
+        <invoker type="formActions" action="_close" caption="Close" mnemonic="c" 
+                 visibleWhen = "#{mode =='read'}" role="TRANSFERTAX"/> 
+        <invoker type="formActions" action="compute" caption="Compute" mnemonic = "A" 
+                 shortcut = "ctrl A" visibleWhen = "#{mode =='init'}" role="TRANSFERTAX"> </invoker>      
+        <invoker type="formActions" action="save" caption="Save" mnemonic = "S" shortcut = "ctrl S" 
+                    visibleWhen = "#{mode =='assess'}" role="TRANSFERTAX"></invoker>
+       <invoker type="formActions" action="_close" caption="Cancel" mnemonic="R" 
+                 visibleWhen = "#{mode =='assess'}" role="TRANSFERTAX"/> 
+                               
+    </invokers>
+    <code class="etracs.training.plugin.TransferTaxAssessmentController"/>
+    <pages>
+        <page name="default" template="etracs.training.plugin.TransferTaxAssessmentPage" />
+        <page name="preview" template="com.rameses.osiris2.common.ui.ReportPreviewPage"/>
+    </pages>
+</workunit>

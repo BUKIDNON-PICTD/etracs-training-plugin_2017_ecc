@@ -16,18 +16,19 @@ public class Main {
             env.put("app.cluster", "osiris3");
         
             Map roles = new HashMap();
-            roles.put("TREASURY.SPONEW", null);
-            roles.put("TREASURY.SPOLIST", null);
-            roles.put("TREASURY.SPOADMIN", null);
-            roles.put("TREASURY.SPOLISTREPORT", null);
-            roles.put("TREASURY.SPOADMINLISTREPORT", null);
-            roles.put("TREASURY.SPOSGASSESSOR", null);
-            roles.put("TREASURY.SPOSGMASTER", null);
-            roles.put("TREASURY.SPOPERMITTEE", null);
-            roles.put("TREASURY.SPOPERMITTEELIST", null);
-            roles.put("TREASURY.ORESPONEW", null);
-            roles.put("TREASURY.SPOHOUSINGREPORT", null);
-            roles.put("TREASURY.SPOOFFLINE", null);
+            roles.put("PO.SPONEW", null);
+            roles.put("PO.SPOLIST", null);
+            roles.put("PO.SPOADMIN", null);
+            roles.put("PO.SPOLISTREPORT", null);
+            roles.put("PO.SPOADMINLISTREPORT", null);
+            roles.put("PO.SPOSGASSESSOR", null);
+            roles.put("PO.SPOSGMASTER", null);
+            roles.put("PO.SPOPERMITTEE", null);
+            roles.put("PO.SPOPERMITTEELIST", null);
+            roles.put("PO.ORESPONEW", null);
+            roles.put("PO.SPOHOUSINGREPORT", null);
+            roles.put("PO.SPOOFFLINE", null);
+            roles.put("PO.TRANSFERTAX", null);
             
             Map profile = new HashMap();
             profile.put("CLIENTTYPE", "desktop");

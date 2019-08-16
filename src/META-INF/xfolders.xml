@@ -8,7 +8,7 @@
     
     
     <folder id="home">
-        <folder id="paymentorder" caption="Payment Order" index="100">            
+        <folder id="paymentorder" caption="Payment Order" icon="etracs/training/plugin/images/paymentorder2.png" index="100">            
          </folder>
  </folder>
 </folders>
