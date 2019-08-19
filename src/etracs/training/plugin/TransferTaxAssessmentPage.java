@@ -74,16 +74,16 @@ public class TransferTaxAssessmentPage extends javax.swing.JPanel {
 
         xFormPanel3.setName(""); // NOI18N
 
-        xDecimalField1.setCaption("Tax Due");
-        xDecimalField1.setCaptionWidth(100);
+        xDecimalField1.setCaption("Amount Considered");
+        xDecimalField1.setCaptionWidth(120);
         xDecimalField1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        xDecimalField1.setName("entity.taxdue"); // NOI18N
+        xDecimalField1.setName("entity.amountconsidered"); // NOI18N
         xDecimalField1.setPreferredSize(new java.awt.Dimension(200, 20));
         xDecimalField1.setRequired(true);
         xFormPanel3.add(xDecimalField1);
 
         xIntegerField1.setCaption("# of Months");
-        xIntegerField1.setCaptionWidth(100);
+        xIntegerField1.setCaptionWidth(120);
         xIntegerField1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         xIntegerField1.setName("entity.nummonth"); // NOI18N
         xIntegerField1.setPreferredSize(new java.awt.Dimension(200, 20));

@@ -22,6 +22,14 @@
         <td>${entity.paidbyaddress}</td>
     </tr>
     <tr>
+        <td>Computed Tax Due</td>
+        <td>${entity.taxdue}</td>
+    </tr>
+    <tr>
+        <td>Number of Months</td>
+        <td>${entity.nummonth}</td>
+    </tr>
+    <tr>
         <td colspan="2">
             <hr>
             <table width="100%">
